@@ -5,5 +5,6 @@ export class Card {
   public gender: string;
   public origin: string;
   public image: string;
-  public skills: [string]
+  public skills: string[];
 }
+

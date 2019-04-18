@@ -1,5 +1,18 @@
-<div *ngFor="let current of cardList">
-  {{current.name}}, {{current.gender}}, {{current.origin}}
-  <img src={{current.image}}>
-</div>
+
+
+
+<ul>
+    <li *ngFor="let current of cardList">
+      <p>{{current.id}}</p>
+      <p>{{current.name}}</p>
+      <p>{{current.gender}}</p>
+      <p>{{current.origine}}</p>
+      <img src={{current.image}} />
+      <ul>
+        <li *ngFor="let skill of current.skills">
+          <p>{{skill}}</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
 
