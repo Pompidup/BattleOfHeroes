@@ -15,6 +15,7 @@ export class CardService {
   constructor(private myService: HttpClient) { }
 
 
+
   public getCardArray(adress: string): Observable<any> {
     return this.myService.get(adress).pipe(
       map(
@@ -26,13 +27,30 @@ export class CardService {
             current = paramData[i];
 
             if (current !== 0) {
-              let card: Card = new Card();
+              const card: Card = new Card();
+
               card.id = current.id;
               card.name = current.name;
               card.gender = current.gender;
               card.origin = current.origin;
               card.image = current.image;
-             // card.skills = current.[];
+              const batard: string[] = [];
+              for (let i = 0; i < current.skills.length; i++) {
+                //console.log(current.skills[i]);
+                var tmp:string[] = current.skills[i].split(':');
+                //console.log(tmp[1]);
+                batard.push(tmp[1]);
+              }
+              console.log(batard);
+              card.skills = batard;
+
+           //     var tmp:string = element.split(':');
+            //    card.skills.push(tmp);
+
+              //let toCut = current.skills;
+              //let lastChar = toCut.charAt(toCut.length - 1);
+
+             // card.skills = current.skills;
 
               cardList.push(card);
             } else {
