@@ -29,6 +29,10 @@
     border: solid black 3px;
 }
 
+.dark{
+    opacity: 50%;
+}
+
 .card:nth-child(2){
     margin: 0 50px;
 }
@@ -45,4 +49,12 @@
 button{
     border: solid black 1px;
     background-color: green;
+}
+
+.easter{
+    height: 170px;
+    width: 110px;
+    margin-left: 180px;
+    margin-top: 300px;
+    transform: rotate(20deg);
 }
