@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { CardService } from './card.service';
 import { Card } from './character';
+import { deck1 } from './deck';
+import { deck2 } from './deck';
+
 
 @Component({
   selector: 'app-root',
@@ -10,7 +13,8 @@ import { Card } from './character';
 export class AppComponent {
   title = 'Battle-of-Heroes';
   cardList: Card[];
-  deck: Card[];
+  deck1 = deck1;
+  deck2 = deck2;
 
   constructor(private myService: CardService) {
     this.cardList = [];
@@ -21,10 +25,4 @@ export class AppComponent {
     )
   }
 }
-/*public getRandomDeck() {
-    for (let i:number; i < 6;i++){
-      this.deck .push(this.cardList[Math.floor(Math.random() * (57 - 0 + 1)) + 0]);
-    }
-    return this.deck;
-  }*/
- // this.deck = param_card[Math.floor(Math.random() * (57 - 0 + 1)) + 0];
+

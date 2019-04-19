@@ -6,5 +6,5 @@ export class Card {
   public origin: string;
   public image: string;
   public skills: string[];
-}
 
+}
