@@ -11,10 +11,14 @@ import { stringify } from '@angular/core/src/util';
 })
 export class CardComponent implements OnInit {
 
-  public deck1:Card[] = deck1;
-  public deck2:Card[] = deck2;
-  public scorePlayer1:number = 0;
-  public scoreComputer:number = 0;
+  public deck1: Card[] = deck1;
+  public deck2: Card[] = deck2;
+  public scorePlayer1: number = 0;
+  public scoreComputer: number = 0;
+  public cpt:number = 0;
+  public winner:string = "";
+  public loser:string = "";
+  public equality:string = "";
 
   constructor() { }
 
@@ -32,7 +36,7 @@ export class CardComponent implements OnInit {
     document.getElementById("card3").style.borderColor = "red";
     this.fight(Number(deck1[1].skills[0]), Number(deck1[1].skills[1]), Number(deck1[1].skills[2]), Number(deck2[2].skills[0]), Number(deck2[2].skills[1]), Number(deck2[2].skills[2]));
     this.hiddenCard("card8", "card3", "btn2");
-}
+  }
   bouton3() {
     document.getElementById("card9").style.borderColor = "gold";
     document.getElementById("card1").style.borderColor = "red";
@@ -58,16 +62,31 @@ export class CardComponent implements OnInit {
     this.hiddenCard("card12", "card2", "btn6");
   }
 
-  fight(d1s1:number, d1s2:number, d1s3:number, d2s1:number, d2s2:number, d2s3:number):void {
-    let scoreP1:number = 0;
-    let scoreP2:number = 0;
-    if (d1s1 > d2s1) {scoreP1++}else if (d1s1 < d2s1) {scoreP2++};
-    if (d1s2 > d2s2) {scoreP1++}else if (d1s2 < d2s2) {scoreP2++};
-    if (d1s3 > d2s3) {scoreP1++}else if (d1s3 < d2s3) {scoreP2++};
-    if (scoreP1 > scoreP2){ this.scorePlayer1++}else if (scoreP1 < scoreP2){ this.scoreComputer++};
-
+  fight(d1s1: number, d1s2: number, d1s3: number, d2s1: number, d2s2: number, d2s3: number): void {
+    let scoreP1: number = 0;
+    let scoreP2: number = 0;
+    this.cpt++
+   // console.log(this.cpt);
+    if (d1s1 > d2s1) { scoreP1++ } else if (d1s1 < d2s1) { scoreP2++ };
+    if (d1s2 > d2s2) { scoreP1++ } else if (d1s2 < d2s2) { scoreP2++ };
+    if (d1s3 > d2s3) { scoreP1++ } else if (d1s3 < d2s3) { scoreP2++ };
+    if (scoreP1 > scoreP2) {
+      this.scorePlayer1++
+    } else if (scoreP1 < scoreP2) {
+      this.scoreComputer++
+    };
+    if (this.cpt == 6){
+      if (this.scorePlayer1 > this.scoreComputer) {
+        this.winner = "You Win !";
+      }else if (this.scorePlayer1 < this.scoreComputer) {
+        this.loser = "You Lose !";
+      } else {
+        this.equality = "Equality";
+      };
+    }
   }
-  hiddenCard(id1:string, id2:string, id3:string):void {
+
+  hiddenCard(id1: string, id2: string, id3: string): void {
     document.getElementById(id1).style.display = 'none';
     document.getElementById(id2).style.display = 'none';
     document.getElementById(id3).style.display = 'none';

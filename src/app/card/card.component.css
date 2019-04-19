@@ -77,6 +77,10 @@ button{
     transform: rotate(20deg);
 }
 
-#card12 {
-  transition: all 2s linear;
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
 }
