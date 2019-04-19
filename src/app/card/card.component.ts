@@ -80,7 +80,7 @@ export class CardComponent implements OnInit {
       if (this.scorePlayer1 > this.scoreComputer) {
         this.winner = "You Win !";
       } else if (this.scorePlayer1 < this.scoreComputer) {
-        this.loser = "You Lose !";
+        this.loser = "You Loose !";
       } else {
         this.equality = "Equality";
       };
