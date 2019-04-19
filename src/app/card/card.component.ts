@@ -25,27 +25,31 @@ export class CardComponent implements OnInit {
     document.getElementById("card7").style.borderColor = "gold";
     document.getElementById("card5").style.borderColor = "red";
     this.fight(Number(deck1[0].skills[0]), Number(deck1[0].skills[1]), Number(deck1[0].skills[2]), Number(deck2[4].skills[0]), Number(deck2[4].skills[1]), Number(deck2[4].skills[2]));
+    this.hiddenCard("card7", "card5", "btn1");
   }
   bouton2() {
     document.getElementById("card8").style.borderColor = "gold";
     document.getElementById("card3").style.borderColor = "red";
     this.fight(Number(deck1[1].skills[0]), Number(deck1[1].skills[1]), Number(deck1[1].skills[2]), Number(deck2[2].skills[0]), Number(deck2[2].skills[1]), Number(deck2[2].skills[2]));
+    this.hiddenCard("card8", "card3", "btn2");
 }
   bouton3() {
     document.getElementById("card9").style.borderColor = "gold";
     document.getElementById("card1").style.borderColor = "red";
     this.fight(Number(deck1[2].skills[0]), Number(deck1[2].skills[1]), Number(deck1[2].skills[2]), Number(deck2[0].skills[0]), Number(deck2[0].skills[1]), Number(deck2[0].skills[2]));
+    this.hiddenCard("card9", "card1", "btn3");
   }
   bouton4() {
     document.getElementById("card10").style.borderColor = "gold";
     document.getElementById("card6").style.borderColor = "red";
     this.fight(Number(deck1[3].skills[0]), Number(deck1[3].skills[1]), Number(deck1[3].skills[2]), Number(deck2[5].skills[0]), Number(deck2[5].skills[1]), Number(deck2[5].skills[2]));
+    this.hiddenCard("card10", "card6", "btn4");
   }
   bouton5() {
     document.getElementById("card11").style.borderColor = "gold";
     document.getElementById("card4").style.borderColor = "red";
     this.fight(Number(deck1[4].skills[0]), Number(deck1[4].skills[1]), Number(deck1[4].skills[2]), Number(deck2[3].skills[0]), Number(deck2[3].skills[1]), Number(deck2[3].skills[2]));
-
+    this.hiddenCard("card11", "card4", "btn5");
   }
   bouton6() {
     document.getElementById("card12").style.borderColor = "gold";
