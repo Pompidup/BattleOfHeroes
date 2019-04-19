@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { deck1 } from '../deck'
+import { deck2 } from '../deck'
+import { Card } from '../character'
 
 @Component({
   selector: 'app-card',
@@ -6,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
+
+  public deck1:Card[] = deck1;
+  public deck2:Card[] = deck2;
 
   constructor() { }
 

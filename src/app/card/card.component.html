@@ -1,17 +1,18 @@
 <div class="container">
   <!-- Player Ordi -->
   <div class="row top"></div>
+
   <div class="row">
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card1">
-          <img class="card-img-top" src="assets/oeuf.jpg" alt="Image">
+          <img class="card-img-top" [src]="deck2[0].image">
           <div class="card-body">
-            <h5 class="card-title">XXX</h5>
-            <p class="card-text">XXXXX</p>
-            <p><img class="icone up" src="assets/épée.png"> X
-              <img class="icone feu" src="assets/fire.png"> X
-              <img class="icone up" src="assets/coeur.png"> X</p>
+            <h5 class="card-title">{{deck2[0].name}}</h5>
+            <p class="card-text">{{deck2[0].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck2[0].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck2[0].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck2[0].skills[2]}}</p>
           </div>
         </div>
       </div>
@@ -19,13 +20,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card2">
-          <img class="card-img-top" src="assets/oeuf.jpg" alt="Image">
+          <img class="card-img-top" [src]="deck2[1].image">
           <div class="card-body">
-            <h5 class="card-title">XXX</h5>
-            <p class="card-text">XXXXX</p>
-            <p><img class="icone up" src="assets/épée.png"> X
-              <img class="icone feu" src="assets/fire.png"> X
-              <img class="icone up" src="assets/coeur.png"> X</p>
+            <h5 class="card-title">{{deck2[1].name}}</h5>
+            <p class="card-text">{{deck2[1].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck2[1].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck2[1].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck2[1].skills[2]}}</p>
           </div>
         </div>
       </div>
@@ -33,13 +34,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card3">
-          <img class="card-img-top" src="assets/oeuf.jpg" alt="Image">
+          <img class="card-img-top" [src]="deck2[2].image">
           <div class="card-body">
-            <h5 class="card-title">XXX</h5>
-            <p class="card-text">XXXXX</p>
-            <p><img class="icone up" src="assets/épée.png"> X
-              <img class="icone feu" src="assets/fire.png"> X
-              <img class="icone up" src="assets/coeur.png"> X</p>
+            <h5 class="card-title">{{deck2[2].name}}</h5>
+            <p class="card-text">{{deck2[2].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck2[2].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck2[2].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck2[2].skills[2]}}</p>
           </div>
         </div>
       </div>
@@ -47,13 +48,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card4">
-          <img class="card-img-top" src="assets/oeuf.jpg" alt="Image">
+          <img class="card-img-top" [src]="deck2[3].image">
           <div class="card-body">
-            <h5 class="card-title">XXX</h5>
-            <p class="card-text">XXXXX</p>
-            <p><img class="icone up" src="assets/épée.png"> X
-              <img class="icone feu" src="assets/fire.png"> X
-              <img class="icone up" src="assets/coeur.png"> X</p>
+            <h5 class="card-title">{{deck2[3].name}}</h5>
+            <p class="card-text">{{deck2[3].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck2[3].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck2[3].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck2[3].skills[2]}}</p>
           </div>
         </div>
       </div>
@@ -61,13 +62,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card5">
-          <img class="card-img-top" src="assets/oeuf.jpg" alt="Image">
+          <img class="card-img-top" [src]="deck2[4].image">
           <div class="card-body">
-            <h5 class="card-title">XXX</h5>
-            <p class="card-text">XXXXX</p>
-            <p><img class="icone up" src="assets/épée.png"> X
-              <img class="icone feu" src="assets/fire.png"> X
-              <img class="icone up" src="assets/coeur.png"> X</p>
+            <h5 class="card-title">{{deck2[4].name}}</h5>
+            <p class="card-text">{{deck2[4].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck2[4].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck2[4].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck2[4].skills[2]}}</p>
           </div>
         </div>
       </div>
@@ -75,13 +76,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card6">
-          <img class="card-img-top" src="assets/oeuf.jpg" alt="Image">
+          <img class="card-img-top" [src]="deck2[5].image">
           <div class="card-body">
-            <h5 class="card-title">XXX</h5>
-            <p class="card-text">XXXXX</p>
-            <p><img class="icone up" src="assets/épée.png"> X
-              <img class="icone feu" src="assets/fire.png"> X
-              <img class="icone up" src="assets/coeur.png"> X</p>
+            <h5 class="card-title">{{deck2[5].name}}</h5>
+            <p class="card-text">{{deck2[5].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck2[5].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck2[5].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck2[5].skills[2]}}</p>
           </div>
         </div>
       </div>
@@ -99,15 +100,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card7">
-          <img class="card-img-top"
-            src="https://images.innoveduc.fr/easter_hackathon/4262699-a86be31143ba35176665964cfa29516a-d5qg94n.jpg"
-            alt="Image">
+          <img class="card-img-top" [src]="deck1[0].image">
           <div class="card-body">
-            <h5 class="card-title">Gandalf</h5>
-            <p class="card-text">Grand magicien</p>
-            <p><img class="icone up" src="assets/épée.png"> 4
-              <img class="icone feu" src="assets/fire.png"> 13
-              <img class="icone up" src="assets/coeur.png"> 10</p>
+            <h5 class="card-title">{{deck1[0].name}}</h5>
+            <p class="card-text">{{deck1[0].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck1[0].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck1[0].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck1[0].skills[2]}}</p>
           </div>
         </div>
         <button (click)="bouton1()">Play this card !</button>
@@ -116,15 +115,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card8">
-          <img class="card-img-top"
-            src="https://images.innoveduc.fr/easter_hackathon/6438864-dc94c42f-acac-44ff-8804-85a37f06262d.jpeg"
-            alt="Image">
+          <img class="card-img-top" [src]="deck1[1].image">
           <div class="card-body">
-            <h5 class="card-title">Dark Vador</h5>
-            <p class="card-text">Seigneur Sith</p>
-            <p><img class="icone up" src="assets/épée.png"> 12
-              <img class="icone feu" src="assets/fire.png"> 6
-              <img class="icone up" src="assets/coeur.png"> 7</p>
+            <h5 class="card-title">{{deck1[1].name}}</h5>
+            <p class="card-text">{{deck1[1].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck1[1].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck1[1].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck1[1].skills[2]}}</p>
           </div>
         </div>
         <button (click)="bouton2()">Play this card !</button>
@@ -133,14 +130,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card9">
-          <img class="card-img-top" src="https://images.innoveduc.fr/easter_hackathon/5612601-hbyws17-fc-fnlc.jpg"
-            alt="Image">
+          <img class="card-img-top" [src]="deck1[2].image">
           <div class="card-body">
-            <h5 class="card-title">Hellboy</h5>
-            <p class="card-text">Diable</p>
-            <p><img class="icone up" src="assets/épée.png"> 15
-              <img class="icone feu" src="assets/fire.png"> 2
-              <img class="icone up" src="assets/coeur.png"> 10</p>
+            <h5 class="card-title">{{deck1[2].name}}</h5>
+            <p class="card-text">{{deck1[2].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck1[2].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck1[2].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck1[2].skills[2]}}</p>
           </div>
         </div>
         <button (click)="bouton3()">Play this card !</button>
@@ -149,14 +145,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card10">
-          <img class="card-img-top"
-            src="https://images.innoveduc.fr/easter_hackathon/250px-Catwoman_DC_Rebirth_version.jpg" alt="Image">
+          <img class="card-img-top" [src]="deck1[3].image">
           <div class="card-body">
-            <h5 class="card-title">Catwoman</h5>
-            <p class="card-text">Femme-chat</p>
-            <p><img class="icone up" src="assets/épée.png"> 8
-              <img class="icone feu" src="assets/fire.png"> 4
-              <img class="icone up" src="assets/coeur.png"> 13</p>
+            <h5 class="card-title">{{deck1[3].name}}</h5>
+            <p class="card-text">{{deck1[3].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck1[3].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck1[3].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck1[3].skills[2]}}</p>
           </div>
         </div>
         <button (click)="bouton4()">Play this card !</button>
@@ -165,14 +160,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card11">
-          <img class="card-img-top"
-            src="https://images.innoveduc.fr/easter_hackathon/4df16f2a2102cb1e39d2f2531e3b7881.jpg" alt="Image">
+          <img class="card-img-top" [src]="deck1[4].image">
           <div class="card-body">
-            <h5 class="card-title">RogerRabbit</h5>
-            <p class="card-text">Lapin tout mimi</p>
-            <p><img class="icone up" src="assets/épée.png"> 2
-              <img class="icone feu" src="assets/fire.png"> 2
-              <img class="icone up" src="assets/coeur.png"> 20</p>
+            <h5 class="card-title">{{deck1[4].name}}</h5>
+            <p class="card-text">{{deck1[4].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck1[4].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck1[4].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck1[4].skills[2]}}</p>
           </div>
         </div>
         <button (click)="bouton5()">Play this card !</button>
@@ -181,13 +175,13 @@
     <div class="col-2">
       <div style="text-align:center">
         <div class="card" id="card12">
-          <img class="card-img-top" src="https://images.innoveduc.fr/easter_hackathon/96.jpeg" alt="Image">
+          <img class="card-img-top" [src]="deck1[5].image">
           <div class="card-body">
-            <h5 class="card-title">Tuberulosis</h5>
-            <p class="card-text">Maladie</p>
-            <p><img class="icone up" src="assets/épée.png"> 10
-              <img class="icone feu" src="assets/fire.png"> 10
-              <img class="icone up" src="assets/coeur.png"> 3</p>
+            <h5 class="card-title">{{deck1[5].name}}</h5>
+            <p class="card-text">{{deck1[5].origin}}</p>
+            <p><img class="icone up" src="assets/épée.png"> {{deck1[5].skills[0]}}
+              <img class="icone feu" src="assets/fire.png"> {{deck1[5].skills[1]}}
+              <img class="icone up" src="assets/coeur.png"> {{deck1[5].skills[2]}}</p>
           </div>
         </div>
         <button (click)="bouton6()">Play this card !</button>
