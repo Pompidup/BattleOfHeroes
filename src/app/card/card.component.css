@@ -74,9 +74,9 @@ button{
 }
 
 .easter{
-    height: 170px;
-    width: 110px;
-    margin-left: 180px;
+    height: 250px;
+    width: 160px;
+    margin-left: 130px;
     margin-top: 300px;
     transform: rotate(20deg);
 }
