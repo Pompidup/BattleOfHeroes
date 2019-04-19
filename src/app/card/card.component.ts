@@ -60,7 +60,7 @@ export class CardComponent implements OnInit {
     if (d1s1 > d2s1) {scoreP1++}else if (d1s1 < d2s1) {scoreP2++};
     if (d1s2 > d2s2) {scoreP1++}else if (d1s2 < d2s2) {scoreP2++};
     if (d1s3 > d2s3) {scoreP1++}else if (d1s3 < d2s3) {scoreP2++};
-    if (scoreP1 > scoreP2){alert("1 point for player 1"); this.scorePlayer1++}else if (scoreP1 < scoreP2){alert("1 point for player 2"); this.scoreComputer++}else {alert("Match nul")};
+    if (scoreP1 > scoreP2){ this.scorePlayer1++}else if (scoreP1 < scoreP2){ this.scoreComputer++};
 
   }
   hiddenCard(id1:string, id2:string, id3:string):void {
