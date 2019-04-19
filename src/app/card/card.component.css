@@ -65,8 +65,12 @@
 }
 
 button{
+    font-family: "LifeCraft";
+    font-size: 200%;
     border: solid black 1px;
-    background-color: green;
+    background-color: #02BB24;
+    color: white;
+    border-radius: 28%;
 }
 
 .easter{
