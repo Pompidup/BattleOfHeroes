@@ -82,7 +82,7 @@ export class CardComponent implements OnInit {
       } else if (this.scorePlayer1 < this.scoreComputer) {
         this.loser = "You Loose !";
       } else {
-        this.equality = "Equality";
+        this.equality = "Drawing";
       };
     }
   }
