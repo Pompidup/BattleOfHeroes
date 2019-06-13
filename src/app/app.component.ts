@@ -18,7 +18,7 @@ export class AppComponent {
 
   constructor(private myService: CardService) {
     this.cardList = [];
-    this.myService.getCardArray("http://easteregg.wildcodeschool.fr/api/characters").subscribe(
+    this.myService.getCardArray("http://tours.wilders.dev/api/characters").subscribe(
       (param_card: Card[]) => {
         this.cardList = param_card;
       }
